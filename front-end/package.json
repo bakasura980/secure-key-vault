@@ -1,0 +1,33 @@
+{
+  "name": "key-vault-react",
+  "version": "1.0.0",
+  "description": "Key vault challenge front-end",
+  "main": "index.tsx",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "chain": "etherlime ganache",
+    "deploy-factory": "node deployment/deploy-factory.js",
+    "build": "cd web && react-scripts build",
+    "start": "npm run deploy-factory && npm run build && cd web && react-scripts start"
+  },
+  "author": "Lyubomir Kiprov",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react-alert": "^5.2.0",
+    "@types/react-dom": "^16.9.8",
+    "axios": "^0.20.0",
+    "eth-sig-util": "^2.5.3",
+    "ethereumjs-util": "^7.0.5",
+    "etherlime": "^2.3.3",
+    "etherlime-lib": "^1.2.3",
+    "react": "16.8.1",
+    "react-dom": "16.8.1",
+    "react-html-parser": "2.0.2",
+    "react-scripts": "2.1.4",
+    "secrets.js-grempe": "^2.0.0",
+    "typescript": "^4.0.2",
+    "web3": "^1.3.0"
+  }
+}
